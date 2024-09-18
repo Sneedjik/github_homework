@@ -14,5 +14,6 @@ public class SelenideRepositorySearchTest {
         $("#query-builder-test").setValue("selenide").pressEnter();
         $$("[data-testid=results-list] div").first().$("a").click();
         $("#repository-container-header").shouldHave(text("selenide / selenide"));
+
     }
 }
